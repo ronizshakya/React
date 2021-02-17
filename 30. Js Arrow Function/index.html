@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript "this"</h2>
+
+    <p>
+      Arrow Functions, the "this" keyword represents the object that owns the
+      function, no matter who calls the function.
+    </p>
+    <p>
+      Regular function, the "this" keyword represents different objects
+      depending on how the function was called.
+    </p>
+    <button id="btn" >Click Me!</button>
+
+    <p id="demo"></p>
+
+    <script>
+      var arrowFunction, hello;
+
+      hello = function () {
+        document.getElementById("demo").innerHTML += this;
+      };
+
+      arrowFunction = () => {
+        document.getElementById("demo").innerHTML += this;
+      };
+
+      //The window object calls the function:
+      window.addEventListener("load", arrowFunction);
+
+      //A button object calls the function:
+      document.getElementById("btn").addEventListener("click", arrowFunction);
+    </script>
+  </body>
+</html>

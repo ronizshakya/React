@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body  onload="onLoad()">
+    <p 
+    id="test"
+     onmouseover="this.innerHTML='Mouse Over'""
+     onmouseout="this.innerHTML='This is paragraph'"
+     onmouseup="this.innerHTML='Mouse up'"
+     onmousedown="this.innerHTML='Mouse down'"
+        >This is paragraph</p>
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+    <script>
+        function onLoad(){
+            document.getElementById('test').style.color="red"
+        }
+    </script>
+    </body>
+</html>
