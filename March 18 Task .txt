@@ -1,0 +1,47 @@
+-------------hooks-------------------------------------
+1. Use useRef to access the dom property and highlight the color of the a different element
+   - On clicking the button highlight the h1 tag element
+   - On hovering the same h1 element show the text in bigger size 
+   make use of useRef to change the property of element
+
+2. Create a custom hooks to use Dark theme.
+   - using that hook in any component will enable me to toggle the theme of the page. 
+   
+   
+-------------Routes------------------------------------
+1. Use react route to create route for different component
+   - on root component(ex: Home) create a navigation link for another component(ex: About) and on clicking on the link user should go to that component .
+     Also pass few props to the another component(ex: About) and use that props to render ui.
+     
+2. Fetch  posts from https://jsonplaceholder.typicode.com/posts and show it in UI as a route Link
+   - all the posts has to be on path "posts"
+   - on clicking on the particular post link user should go to post/[id] path    
+   - on post/[id] component page access the id of the post and fetch data from https://jsonplaceholder.typicode.com/posts/[id]
+     and render fetched data on ui.
+	 
+	 
+   
+-------------HOC---------------------------------------
+1. Create two different form component without header and footer.
+
+2. Use HOC to wrap a  form component 
+  - In HOC add a header and footer (header must contain title and footer must contain submit button)
+
+3. on clicking submit parent save state to parent component  
+4. Add clear button on one of the form component.
+    - clear button should trigger HOC event	and on clicking clear button form should go back to initial state
+
+
+
+1. Create action types, action-creater, reducer and store
+2. Create a login component on route '/login'.
+   Once login is success fetch user data from server and store it in it redux.
+3. After successful login user should be redirected to home
+   - create a home component A (route path example:'/home')
+   - component A will have a button to go to profile page (route:"/profile")
+4. Create profile component on route "/profile"
+   - access redux data and use that data to render on the UI
+PS: package to install - redux, react-redux
+React course and app has been updated for this week in github
+	
+	
